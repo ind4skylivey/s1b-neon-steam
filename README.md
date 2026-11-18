@@ -21,8 +21,7 @@ A lit city at night that is still easy to read.
 
 <table>
   <tr>
-    <td width="50%"><img src="screenshots/library.png" alt="Library"><br><sub><b>Library</b></sub></td>
-    <td width="50%"><img src="screenshots/store.png" alt="Store"><br><sub><b>Store</b></sub></td>
+    <td colspan="2"><img src="screenshots/library.png" alt="Library"><br><sub><b>Library</b></sub></td>
   </tr>
   <tr>
     <td width="50%"><img src="screenshots/friends.png" alt="Friends and chat"><br><sub><b>Friends and chat</b></sub></td>
