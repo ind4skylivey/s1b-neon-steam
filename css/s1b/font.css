@@ -1,0 +1,5 @@
+/* S1B Neon — custom font for Material-Theme ("Font: Custom") */
+* {
+    font-family: "JetBrainsMono Nerd Font", "JetBrainsMono NF", "JetBrains Mono", monospace !important;
+    font-feature-settings: "calt" 1, "liga" 1;
+}

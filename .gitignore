@@ -1,0 +1,14 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# Local build and preview output
+node_modules/
+preview-*.png
+
+# Millennium runtime file
+metadata.json

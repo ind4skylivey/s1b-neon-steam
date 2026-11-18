@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="140" viewBox="0 0 1000 140" role="img" aria-label="S1B Neon palette">
+  <rect width="1000" height="140" rx="12" fill="#120926"/>
+  <rect x="0.75" y="0.75" width="998.5" height="138.5" rx="11.5" fill="none" stroke="#d04dff" stroke-opacity="0.35" stroke-width="1.5"/>
+  <g font-family="'JetBrainsMono Nerd Font','JetBrainsMono NF','JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace" text-anchor="middle">
+    <g>
+      <rect x="20" y="20" width="136" height="68" rx="10" fill="#ff2d78"/>
+      <text x="88" y="112" font-size="14" font-weight="700" fill="#e8dcff">#ff2d78</text>
+      <text x="88" y="130" font-size="11" fill="#e8dcff" fill-opacity="0.6">PINK</text>
+    </g>
+    <g>
+      <rect x="176" y="20" width="136" height="68" rx="10" fill="#00d4ff"/>
+      <text x="244" y="112" font-size="14" font-weight="700" fill="#e8dcff">#00d4ff</text>
+      <text x="244" y="130" font-size="11" fill="#e8dcff" fill-opacity="0.6">CYAN</text>
+    </g>
+    <g>
+      <rect x="332" y="20" width="136" height="68" rx="10" fill="#d04dff"/>
+      <text x="400" y="112" font-size="14" font-weight="700" fill="#e8dcff">#d04dff</text>
+      <text x="400" y="130" font-size="11" fill="#e8dcff" fill-opacity="0.6">PURPLE</text>
+    </g>
+    <g>
+      <rect x="488" y="20" width="136" height="68" rx="10" fill="#00ff41"/>
+      <text x="556" y="112" font-size="14" font-weight="700" fill="#e8dcff">#00ff41</text>
+      <text x="556" y="130" font-size="11" fill="#e8dcff" fill-opacity="0.6">GREEN</text>
+    </g>
+    <g>
+      <rect x="644" y="20" width="136" height="68" rx="10" fill="#ffb59f"/>
+      <text x="712" y="112" font-size="14" font-weight="700" fill="#e8dcff">#ffb59f</text>
+      <text x="712" y="130" font-size="11" fill="#e8dcff" fill-opacity="0.6">PEACH</text>
+    </g>
+    <g>
+      <rect x="800" y="20" width="180" height="68" rx="10" fill="#120926" stroke="#d04dff" stroke-opacity="0.5" stroke-width="1.5"/>
+      <text x="890" y="112" font-size="14" font-weight="700" fill="#e8dcff">#120926</text>
+      <text x="890" y="130" font-size="11" fill="#e8dcff" fill-opacity="0.6">BASE</text>
+    </g>
+  </g>
+</svg>

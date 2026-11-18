@@ -1,0 +1,934 @@
+/* =====================================================================
+   S1B Neon — glass-neon layer for Material-Theme (kuska1)
+   Loaded via Material option "Use Modifications File" = yes.
+   Palette: pink #ff2d78 · cyan #00d4ff · purple #d04dff · green #00ff41 · peach #ffb59f
+   ===================================================================== */
+
+/* ---------- 1. Palette (beats the runtime <style id="material-colors">) ---------- */
+:root {
+    --neon-pink: #ff2d78;
+    --neon-cyan: #00d4ff;
+    --neon-purple: #d04dff;
+    --neon-green: #00ff41;
+    --neon-peach: #ffb59f;
+    --neon-line: linear-gradient(90deg, #ff2d78 0%, #d04dff 50%, #00d4ff 100%);
+    --glass-bg: rgba(17, 14, 28, 0.78);
+    --glass-bg-strong: rgba(13, 11, 22, 0.90);
+    --glass-edge: rgba(208, 77, 255, 0.28);
+    --glow-pink: 0 0 10px rgba(255, 45, 120, 0.45);
+    --glow-cyan: 0 0 10px rgba(0, 212, 255, 0.40);
+    --glow-purple: 0 0 14px rgba(208, 77, 255, 0.30);
+    --keycap-depth: inset 0 -3px 0 rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.07);
+    --keycap-pressed: inset 0 -1px 0 rgba(0, 0, 0, 0.45), inset 0 2px 4px rgba(0, 0, 0, 0.35);
+
+    --md-sys-color-primary: #ff2d78 !important;
+    --md-sys-color-surface-tint: #ff2d78 !important;
+    --md-sys-color-on-primary: #1a0010 !important;
+    --md-sys-color-primary-container: #4a0d2a !important;
+    --md-sys-color-on-primary-container: #ffd9e3 !important;
+    --md-sys-color-inverse-primary: #b3104f !important;
+
+    --md-sys-color-secondary: #00d4ff !important;
+    --md-sys-color-on-secondary: #001f27 !important;
+    --md-sys-color-secondary-container: #0a3446 !important;
+    --md-sys-color-on-secondary-container: #b8f0ff !important;
+
+    --md-sys-color-tertiary: #d04dff !important;
+    --md-sys-color-on-tertiary: #2a0038 !important;
+    --md-sys-color-tertiary-container: #45125a !important;
+    --md-sys-color-on-tertiary-container: #f6d9ff !important;
+
+    --md-sys-color-background: #0b0a12 !important;
+    --md-sys-color-surface: #0b0a12 !important;
+    --md-sys-color-surface-dim: #0b0a12 !important;
+    --md-sys-color-surface-container-lowest: #07060c !important;
+    --md-sys-color-surface-container-low: #100e19 !important;
+    --md-sys-color-surface-container: #15121f !important;
+    --md-sys-color-surface-container-high: #1c1828 !important;
+    --md-sys-color-surface-container-highest: #241f33 !important;
+    --md-sys-color-surface-bright: #2e2840 !important;
+    --md-sys-color-surface-variant: #2a2438 !important;
+    --md-sys-color-on-background: #ece6f5 !important;
+    --md-sys-color-on-surface: #ece6f5 !important;
+    --md-sys-color-on-surface-variant: #c9bfd8 !important;
+    --md-sys-color-outline: #8a7fa0 !important;
+    --md-sys-color-outline-variant: #3a3150 !important;
+}
+
+::selection { background: rgba(255, 45, 120, 0.35); color: #fff; }
+
+/* ---------- 2. Top bar: glass + niri-style gradient edge ---------- */
+._3Z7VQ1IMk4E3HsHvrkLNgo /* TopBar */ {
+    background: linear-gradient(180deg, rgba(24, 19, 38, 0.95) 0%, rgba(11, 10, 18, 0.92) 100%) !important;
+    border-bottom: 1px solid transparent !important;
+    border-image: var(--neon-line) 1 !important;
+    box-shadow: 0 1px 14px rgba(208, 77, 255, 0.22) !important;
+}
+
+/* Root menu (Steam · View · Friends · Games · Help) */
+body ._1Ky59qmywxOUtNcI1cgmkX ._2Lu3d-5qLmW4i19ysTt2jT {
+    color: var(--md-sys-color-on-surface-variant) !important;
+    transition: color .15s ease, text-shadow .15s ease;
+}
+body ._1Ky59qmywxOUtNcI1cgmkX ._2Lu3d-5qLmW4i19ysTt2jT:hover {
+    color: var(--neon-cyan) !important;
+    text-shadow: var(--glow-cyan);
+}
+
+/* Super nav tabs (STORE / LIBRARY / COMMUNITY / profile) */
+._7AlhCx3XGzBeIrQaCneUD ._19axKcqYRuaJ8vdYKYmtTQ {
+    letter-spacing: 0.06em;
+    transition: color .15s ease, text-shadow .15s ease;
+}
+._7AlhCx3XGzBeIrQaCneUD:not(._2cO0HdvLEGAdhosLekWsmo):hover ._19axKcqYRuaJ8vdYKYmtTQ {
+    color: var(--neon-cyan) !important;
+    text-shadow: var(--glow-cyan) !important;
+}
+._7AlhCx3XGzBeIrQaCneUD._1gqEjB5QsKT_NftD1dEsdZ {
+    background: var(--neon-line) left bottom / 100% 2px no-repeat !important;
+}
+._7AlhCx3XGzBeIrQaCneUD._1gqEjB5QsKT_NftD1dEsdZ:not(._2cO0HdvLEGAdhosLekWsmo) ._19axKcqYRuaJ8vdYKYmtTQ {
+    color: #fff !important;
+    text-shadow: 0 0 8px rgba(255, 45, 120, 0.75), 0 0 18px rgba(208, 77, 255, 0.35) !important;
+}
+
+/* URL bar: glass pill with a soft cyan edge */
+._1bGewp3tfzqAF6fVTFFUOz .UkR3sY319PuaUNuUWks2K {
+    background: var(--glass-bg) !important;
+    box-shadow: inset 0 0 0 1px rgba(0, 212, 255, 0.18) !important;
+}
+
+/* ---------- 3. Bottom bar: glass + gradient edge ---------- */
+._3vCzSrrXZzZjVJFZNg9SGu {
+    background: linear-gradient(0deg, rgba(24, 19, 38, 0.95) 0%, rgba(11, 10, 18, 0.92) 100%) !important;
+    border-top: 1px solid transparent !important;
+    border-image: var(--neon-line) 1 !important;
+    box-shadow: 0 -1px 14px rgba(208, 77, 255, 0.18) !important;
+}
+
+/* ---------- 4. Keycap buttons ---------- */
+button.DialogButton {
+    border-radius: 10px !important;
+    box-shadow: var(--keycap-depth), 0 0 0 1px rgba(255, 255, 255, 0.06) !important;
+    transition: box-shadow .15s ease, transform .08s ease, filter .15s ease !important;
+}
+button.DialogButton:enabled:hover {
+    box-shadow: var(--keycap-depth), 0 0 0 1px rgba(0, 212, 255, 0.55), var(--glow-cyan) !important;
+}
+button.DialogButton:enabled:active,
+button.DialogButton:enabled:active:hover {
+    transform: translateY(1px);
+    box-shadow: var(--keycap-pressed), 0 0 0 1px rgba(255, 45, 120, 0.65), var(--glow-pink) !important;
+}
+button.DialogButton.Primary:enabled,
+button.DialogButton._DialogLayout.Primary:enabled {
+    box-shadow: var(--keycap-depth), 0 0 0 1px rgba(255, 45, 120, 0.55), 0 0 8px rgba(255, 45, 120, 0.30) !important;
+}
+
+/* Library game action chips (gear / info / more) */
+.DY4_wSF8h9T5o46hO5I9V ._1b6LYWVijW-9E4YV0keDWZ,
+._1bIMOmWaxKrMdVMWU21ku {
+    border-radius: 9px !important;
+    border-color: rgba(208, 77, 255, 0.35) !important;
+    box-shadow: var(--keycap-depth) !important;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .08s ease;
+}
+.DY4_wSF8h9T5o46hO5I9V ._1b6LYWVijW-9E4YV0keDWZ:hover,
+._1bIMOmWaxKrMdVMWU21ku:hover {
+    border-color: rgba(0, 212, 255, 0.7) !important;
+    box-shadow: var(--keycap-depth), var(--glow-cyan) !important;
+}
+.DY4_wSF8h9T5o46hO5I9V ._1b6LYWVijW-9E4YV0keDWZ:active,
+._1bIMOmWaxKrMdVMWU21ku:active {
+    transform: translateY(1px);
+    box-shadow: var(--keycap-pressed), var(--glow-pink) !important;
+}
+
+/* PLAY: the one green key */
+.BasicUI .QsZdWtHTlIK9KIKbscNTt.Play,
+.DesktopUI .Z5iAXBkRFGnwpXsO8ANTl.Play,
+.DesktopUI .Z5iAXBkRFGnwpXsO8ANTl.Launch {
+    background: linear-gradient(180deg, #2bff63 0%, #00d93a 100%) !important;
+    color: #00210a !important;
+    border-radius: 12px !important;
+    box-shadow: inset 0 -3px 0 rgba(0, 60, 18, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 0 12px rgba(0, 255, 65, 0.35) !important;
+    transition: box-shadow .15s ease, transform .08s ease, filter .15s ease;
+}
+.BasicUI .QsZdWtHTlIK9KIKbscNTt.Play:hover,
+.DesktopUI .Z5iAXBkRFGnwpXsO8ANTl.Play:hover,
+.DesktopUI .Z5iAXBkRFGnwpXsO8ANTl.Launch:hover {
+    filter: brightness(1.06);
+    box-shadow: inset 0 -3px 0 rgba(0, 60, 18, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 0 20px rgba(0, 255, 65, 0.55) !important;
+}
+.BasicUI .QsZdWtHTlIK9KIKbscNTt.Play:active,
+.DesktopUI .Z5iAXBkRFGnwpXsO8ANTl.Play:active,
+.DesktopUI .Z5iAXBkRFGnwpXsO8ANTl.Launch:active {
+    transform: translateY(1px);
+    box-shadow: inset 0 -1px 0 rgba(0, 60, 18, 0.55), inset 0 2px 5px rgba(0, 0, 0, 0.30), 0 0 10px rgba(0, 255, 65, 0.40) !important;
+}
+
+/* ---------- 5. Context menus & dropdowns: frosted glass ---------- */
+._3pofGqV0buiKAfMPEs3_82 /* MenuPopup */ {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid var(--glass-edge) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55), var(--glow-purple) !important;
+}
+._3pofGqV0buiKAfMPEs3_82 ._2jXHP0742MyApMUVUM8IFn:not(.d8GPmAyQdRQwoHiPbc8Js):hover {
+    background: linear-gradient(90deg, rgba(255, 45, 120, 0.22) 0%, rgba(208, 77, 255, 0.10) 60%, transparent 100%) !important;
+    box-shadow: inset 2px 0 0 var(--neon-pink);
+    color: #fff !important;
+}
+
+/* ---------- 6. Library cards: neon edge on hover/focus ---------- */
+.WYgDg9NyCcMIVuMyZ_NBC {
+    transition: box-shadow .2s ease, transform .2s ease;
+}
+.WYgDg9NyCcMIVuMyZ_NBC:hover,
+.gpfocus .WYgDg9NyCcMIVuMyZ_NBC,
+._54PuCatl_tYG836TOs4Mv .WYgDg9NyCcMIVuMyZ_NBC._2YsY_x7hLyKlUqjX9bhn0R {
+    box-shadow: 0 0 0 1px rgba(255, 45, 120, 0.65), 0 0 16px rgba(255, 45, 120, 0.30), 0 0 30px rgba(208, 77, 255, 0.18) !important;
+}
+
+/* ---------- 7. Small warm accents (peach) ---------- */
+._1yFUqgSCMYxQbvyVmiriLM /* Wallet balance */ { color: var(--neon-peach) !important; }
+
+/* =====================================================================
+   PASS 2: more personality (glass panels, keycap tabs, terminal headers)
+   ===================================================================== */
+
+/* ---------- 8. Super nav tabs as glowing keycaps ---------- */
+._7AlhCx3XGzBeIrQaCneUD {
+    padding: 2px 10px !important;
+    margin-inline: 3px !important;
+    border-radius: 9px !important;
+    border: 1px solid rgba(255, 255, 255, 0.07) !important;
+    background-color: rgba(255, 255, 255, 0.025) !important;
+    box-shadow: var(--keycap-depth) !important;
+    transition: box-shadow .15s ease, border-color .15s ease, background-color .15s ease, transform .08s ease !important;
+}
+._7AlhCx3XGzBeIrQaCneUD:not(._2cO0HdvLEGAdhosLekWsmo):hover {
+    border-color: rgba(0, 212, 255, 0.55) !important;
+    box-shadow: var(--keycap-depth), var(--glow-cyan) !important;
+}
+._7AlhCx3XGzBeIrQaCneUD._1gqEjB5QsKT_NftD1dEsdZ {
+    transform: translateY(1px);
+    border-color: rgba(255, 45, 120, 0.75) !important;
+    background: var(--neon-line) left bottom / 100% 2px no-repeat, rgba(255, 45, 120, 0.13) !important;
+    box-shadow: var(--keycap-pressed), 0 0 12px rgba(255, 45, 120, 0.40) !important;
+}
+
+/* ---------- 9. Glass panels with subtle texture ---------- */
+/* Library sidebar: dark glass + faint scanlines */
+._3x1HklzyDs4TEjACrRO2tB,
+._1ENHEsrSLcTRtPQFl1F-wL._1DvwQt0JN-Ogp_4tVZdkzX {
+    background:
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.014) 0 1px, transparent 1px 3px),
+        linear-gradient(180deg, rgba(208, 77, 255, 0.05) 0%, transparent 40%),
+        #110e1b !important;
+    border-right: 1px solid rgba(208, 77, 255, 0.22) !important;
+}
+/* Library main: faint neon grid + corner glow */
+._2gSXCB6PbOlMxslr8hm6dm,
+._2Dd4T78PcCTUVgOtDGFY5j {
+    background:
+        radial-gradient(1200px 500px at 100% 0%, rgba(255, 45, 120, 0.07), transparent 60%),
+        radial-gradient(900px 500px at 0% 100%, rgba(0, 212, 255, 0.05), transparent 60%),
+        linear-gradient(rgba(0, 212, 255, 0.022) 1px, transparent 1px) 0 0 / 32px 32px,
+        linear-gradient(90deg, rgba(208, 77, 255, 0.022) 1px, transparent 1px) 0 0 / 32px 32px,
+        #0b0a12 !important;
+}
+
+/* ---------- 10. Sidebar: Home / Collections keycaps (no solid pink) ---------- */
+._3pSPluBgf0NeR1kkCLWMhR {
+    background-color: rgba(17, 14, 28, 0.65) !important;
+    border: 1px solid rgba(255, 45, 120, 0.45) !important;
+    box-shadow: var(--keycap-depth), 0 0 8px rgba(255, 45, 120, 0.15) !important;
+    transition: background-color .15s ease, box-shadow .15s ease, transform .08s ease;
+}
+._3pSPluBgf0NeR1kkCLWMhR ._3O48LaKWcabKx07xdrt1TH { color: var(--neon-pink) !important; letter-spacing: 0.04em; }
+._3pSPluBgf0NeR1kkCLWMhR ._2tyaVs9BpqcW068aaOrO56 { background: var(--neon-pink) !important; }
+._3pSPluBgf0NeR1kkCLWMhR:hover {
+    background-color: rgba(255, 45, 120, 0.10) !important;
+    box-shadow: var(--keycap-depth), var(--glow-pink) !important;
+}
+._3pSPluBgf0NeR1kkCLWMhR.eNLOx4LVceeMwRvTVWh3 {
+    background-color: rgba(255, 45, 120, 0.15) !important;
+    border-color: rgba(255, 45, 120, 0.8) !important;
+    box-shadow: var(--keycap-pressed), 0 0 12px rgba(255, 45, 120, 0.35) !important;
+}
+._3pSPluBgf0NeR1kkCLWMhR.eNLOx4LVceeMwRvTVWh3 ._3O48LaKWcabKx07xdrt1TH {
+    color: #ffd9e3 !important;
+    text-shadow: 0 0 8px rgba(255, 45, 120, 0.7);
+}
+
+/* Type filter dropdown (Games, Soundtracks, Software, and Tools) */
+._1ZS_xta5HMXzR8JgxDH6n7 ._2PF_m-I5yte3WnQhpcz8RC {
+    color: var(--neon-pink) !important;
+    background-color: rgba(17, 14, 28, 0.65) !important;
+    border: 1px solid rgba(255, 45, 120, 0.45) !important;
+    box-shadow: var(--keycap-depth), 0 0 8px rgba(255, 45, 120, 0.15) !important;
+}
+._1ZS_xta5HMXzR8JgxDH6n7 ._2PF_m-I5yte3WnQhpcz8RC:hover {
+    color: var(--neon-pink) !important;
+    background-color: rgba(255, 45, 120, 0.10) !important;
+    box-shadow: var(--keycap-depth), var(--glow-pink) !important;
+}
+._1ZS_xta5HMXzR8JgxDH6n7 ._2PF_m-I5yte3WnQhpcz8RC ._3g-QHB82IGz91Hsk1Hw4lh,
+._1ZS_xta5HMXzR8JgxDH6n7 ._2PF_m-I5yte3WnQhpcz8RC ._3g-QHB82IGz91Hsk1Hw4lh .TlSg5YiFT0KKv6hj9YlKm { color: var(--neon-pink) !important; }
+._1ZS_xta5HMXzR8JgxDH6n7 ._2PF_m-I5yte3WnQhpcz8RC ._15aGnszAf3gHD-PFdJBoFD polygon { fill: var(--neon-pink) !important; }
+
+/* Type toggle buttons next to it */
+._1ZS_xta5HMXzR8JgxDH6n7 ._1PgAonvorr0o_NMxNKiDFU ._3mzKdQXht__YHo6PX1LmB6 {
+    background-color: rgba(17, 14, 28, 0.65) !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 45, 120, 0.35), var(--keycap-depth) !important;
+}
+._1ZS_xta5HMXzR8JgxDH6n7 ._1PgAonvorr0o_NMxNKiDFU ._3mzKdQXht__YHo6PX1LmB6._1QFFkxM5hw-43miIiylbwq {
+    background-color: rgba(255, 45, 120, 0.18) !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 45, 120, 0.8), var(--keycap-pressed), 0 0 10px rgba(255, 45, 120, 0.35) !important;
+}
+._1ZS_xta5HMXzR8JgxDH6n7 ._1PgAonvorr0o_NMxNKiDFU ._3mzKdQXht__YHo6PX1LmB6._1QFFkxM5hw-43miIiylbwq svg :is(path, line, polyline, circle) { stroke: var(--neon-pink) !important; }
+._1ZS_xta5HMXzR8JgxDH6n7 ._1PgAonvorr0o_NMxNKiDFU ._3mzKdQXht__YHo6PX1LmB6._1QFFkxM5hw-43miIiylbwq svg { fill: var(--neon-pink) !important; }
+
+/* Sidebar search: neon focus ring */
+._20QAC4WMXm8qFE8waUT5oo ._12vo5L1hsNGdao6_ssuirS .DialogTextInputBase {
+    background-color: rgba(17, 14, 28, 0.6) !important;
+    box-shadow: inset 0 0 0 1px rgba(0, 212, 255, 0.18) !important;
+    transition: box-shadow .15s ease;
+}
+._20QAC4WMXm8qFE8waUT5oo ._12vo5L1hsNGdao6_ssuirS .DialogTextInputBase:focus,
+.DialogTextInputBase:focus {
+    box-shadow: inset 0 0 0 1px rgba(0, 212, 255, 0.85), 0 0 12px rgba(0, 212, 255, 0.40) !important;
+}
+
+/* ---------- 11. Collection headers: transparent rows, cyan bar, gradient underline ---------- */
+._2sYIghGVXJr6tsQVvcryy8 {
+    background: linear-gradient(90deg, rgba(0, 212, 255, 0.55), rgba(208, 77, 255, 0.25) 45%, transparent 85%) left bottom / 100% 1px no-repeat, transparent !important;
+    box-shadow: inset 3px 0 0 var(--neon-cyan) !important;
+}
+._2sYIghGVXJr6tsQVvcryy8:hover,
+._2sYIghGVXJr6tsQVvcryy8._1dcGFHhye9BeEOg7CkFNQG,
+._2sYIghGVXJr6tsQVvcryy8.sXMOsx8OIRalBMxO9yFY5 {
+    background: linear-gradient(90deg, rgba(0, 212, 255, 0.75), rgba(208, 77, 255, 0.35) 45%, transparent 85%) left bottom / 100% 1px no-repeat, linear-gradient(90deg, rgba(0, 212, 255, 0.08), transparent 70%) !important;
+}
+._2sYIghGVXJr6tsQVvcryy8 ._3cV3O8FnPQqpJO5kIMUlLX,
+._2sYIghGVXJr6tsQVvcryy8 ._2mZ8LlvoUiyeEUtIWuTri {
+    color: #e3a8ff !important;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    text-shadow: 0 0 8px rgba(208, 77, 255, 0.45);
+}
+._2sYIghGVXJr6tsQVvcryy8 ._29uten9Yy8q-n7woDEOXVF { color: rgba(0, 212, 255, 0.75) !important; }
+
+/* ---------- 12. Game list rows: active = pink text + cyan left bar ---------- */
+._2-O4ZG0KrnSrzISHBKctFQ:hover,
+._2-O4ZG0KrnSrzISHBKctFQ._3cMVyOc-9F9Jvp3uKF7_xj {
+    background: linear-gradient(90deg, rgba(0, 212, 255, 0.10), transparent 80%) !important;
+}
+._1UBpAXP408Ez_L_mXhW5Q9._2-O4ZG0KrnSrzISHBKctFQ,
+._1UBpAXP408Ez_L_mXhW5Q9 ._2-O4ZG0KrnSrzISHBKctFQ,
+._1UBpAXP408Ez_L_mXhW5Q9._2-O4ZG0KrnSrzISHBKctFQ:hover,
+._1UBpAXP408Ez_L_mXhW5Q9 ._2-O4ZG0KrnSrzISHBKctFQ:hover {
+    background: linear-gradient(90deg, rgba(255, 45, 120, 0.20), rgba(208, 77, 255, 0.06) 70%, transparent) !important;
+    box-shadow: inset 3px 0 0 var(--neon-cyan), -1px 0 8px rgba(0, 212, 255, 0.35) !important;
+}
+._1UBpAXP408Ez_L_mXhW5Q9._2-O4ZG0KrnSrzISHBKctFQ,
+._1UBpAXP408Ez_L_mXhW5Q9 ._2-O4ZG0KrnSrzISHBKctFQ,
+._2-O4ZG0KrnSrzISHBKctFQ._1UBpAXP408Ez_L_mXhW5Q9._2ws8DONH9fxQjPXEmRpujE {
+    color: var(--neon-pink) !important;
+}
+/* Right-click highlight: glass instead of solid pink */
+._3km84Vscc0uS91f0RN_30C {
+    color: #fff !important;
+    background: rgba(255, 45, 120, 0.25) !important;
+    box-shadow: inset 3px 0 0 var(--neon-pink) !important;
+}
+._2-O4ZG0KrnSrzISHBKctFQ._3km84Vscc0uS91f0RN_30C ._1vO6BoiVslZgs1kqDGdUs8 ._3uk3F1BmAJQR6rl1TPcaif { color: #fff !important; }
+
+/* ---------- 13. Terminal-style section headers ---------- */
+._2o5c89vAnrXN8C60QTSMqO,
+._2q70uOe6xM3-c5XIVfBLe6 {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #ece6f5 !important;
+}
+._2o5c89vAnrXN8C60QTSMqO::before,
+._2q70uOe6xM3-c5XIVfBLe6::before {
+    content: "> ";
+    color: var(--neon-cyan);
+    text-shadow: var(--glow-cyan);
+    font-weight: 700;
+}
+._23SnllqT_AqZ1C_QHcNQ4Z ._1PhK8scyztOxjJwWUpkiLJ /* Showcase rule */ {
+    background: var(--neon-line) !important;
+    border: none !important;
+    height: 1px !important;
+    opacity: 0.6;
+    box-shadow: 0 0 6px rgba(208, 77, 255, 0.45);
+}
+
+/* ---------- 14. Library capsules: cyan ring + glow (lift comes from Move Up) ---------- */
+.WYgDg9NyCcMIVuMyZ_NBC {
+    box-shadow: 0 0 0 1px rgba(208, 77, 255, 0.18) !important;
+}
+.WYgDg9NyCcMIVuMyZ_NBC:hover,
+.gpfocus .WYgDg9NyCcMIVuMyZ_NBC,
+._54PuCatl_tYG836TOs4Mv .WYgDg9NyCcMIVuMyZ_NBC._2YsY_x7hLyKlUqjX9bhn0R {
+    box-shadow: 0 0 0 1px rgba(0, 212, 255, 0.85), 0 0 16px rgba(0, 212, 255, 0.40), 0 8px 26px rgba(208, 77, 255, 0.22) !important;
+}
+
+/* What's New cards: glass */
+.B-vCdL38RiJlhfSRgZv78 .SPz0ipLqfF1oAO7tdrkdY {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(208, 77, 255, 0.25) !important;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+.B-vCdL38RiJlhfSRgZv78._278jFDApipeB4kFsi44_F5:hover .SPz0ipLqfF1oAO7tdrkdY {
+    border-color: rgba(0, 212, 255, 0.75) !important;
+    box-shadow: 0 0 14px rgba(0, 212, 255, 0.30) !important;
+}
+._3_xMyCJAh_Dv99KgZ54P3j {
+    background: rgba(255, 255, 255, 0.035) !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* ---------- 15. Bottom bar as floating glass pill ---------- */
+._3vCzSrrXZzZjVJFZNg9SGu {
+    margin: 0 10px 6px !important;
+    border-radius: 14px !important;
+    border: 1px solid rgba(208, 77, 255, 0.40) !important;
+    border-image: none !important;
+    background: rgba(17, 14, 28, 0.82) !important;
+    backdrop-filter: blur(14px) saturate(140%);
+    box-shadow: 0 0 0 1px rgba(255, 45, 120, 0.10), 0 0 18px rgba(208, 77, 255, 0.22), 0 6px 20px rgba(0, 0, 0, 0.45) !important;
+}
+
+/* ---------- 16. Neon scrollbars (Hide Scrollbar = no) ---------- */
+::-webkit-scrollbar { width: 8px; height: 8px; background: transparent; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ff2d78, #d04dff 55%, #00d4ff);
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover { border-width: 1px; }
+::-webkit-scrollbar-corner { background: transparent; }
+
+/* ---------- 17. Store pages (the custom font applies there, so this file does too) ---------- */
+body .home_page_content h2,
+body .home_ctn h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+body .home_page_content h2::before,
+body .home_ctn h2::before {
+    content: "> ";
+    color: #00d4ff;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+body .carousel_container.maincap {
+    border-radius: 12px;
+    box-shadow: 0 0 0 1px rgba(208, 77, 255, 0.45), 0 0 18px rgba(255, 45, 120, 0.18), 0 0 30px rgba(0, 212, 255, 0.10);
+}
+body #store_nav_search_term:focus,
+body .searchbox:focus-within {
+    box-shadow: 0 0 0 1px rgba(0, 212, 255, 0.85), 0 0 12px rgba(0, 212, 255, 0.40) !important;
+}
+body .store_capsule, body .tab_item, body .home_area_spotlight {
+    transition: box-shadow .2s ease, transform .2s ease;
+}
+body .store_capsule:hover, body .tab_item:hover, body .home_area_spotlight:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 0 1px rgba(0, 212, 255, 0.8), 0 0 14px rgba(0, 212, 255, 0.35);
+}
+
+/* =====================================================================
+   PASS 3: NEON CITY AT NIGHT (more color, stronger glow) + friends + store
+   ===================================================================== */
+
+@keyframes s1b-blink { 0%, 55% { opacity: 1; } 56%, 100% { opacity: 0.25; } }
+
+/* ---------- 18. Deep violet base (overrides earlier palette) ---------- */
+:root {
+    --md-sys-color-background: #0f0820 !important;
+    --md-sys-color-surface: #0f0820 !important;
+    --md-sys-color-surface-dim: #0d0618 !important;
+    --md-sys-color-surface-container-lowest: #0b0516 !important;
+    --md-sys-color-surface-container-low: #140b26 !important;
+    --md-sys-color-surface-container: #170d2c !important;
+    --md-sys-color-surface-container-high: #1e1236 !important;
+    --md-sys-color-surface-container-highest: #261742 !important;
+    --md-sys-color-surface-bright: #33204f !important;
+    --md-sys-color-surface-variant: #2a1a48 !important;
+    --md-sys-color-outline-variant: #3d2a5e !important;
+    --glass-bg: rgba(28, 14, 52, 0.72);
+    --glass-edge: rgba(208, 77, 255, 0.45);
+    --glow-pink: 0 0 8px rgba(255, 45, 120, 0.50), 0 0 24px rgba(255, 45, 120, 0.30);
+    --glow-cyan: 0 0 8px rgba(0, 212, 255, 0.50), 0 0 24px rgba(0, 212, 255, 0.30);
+    --glow-purple: 0 0 8px rgba(208, 77, 255, 0.45), 0 0 24px rgba(208, 77, 255, 0.28);
+    --scanlines: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.028) 0 1px, transparent 1px 3px);
+    --city-glow:
+        radial-gradient(900px 520px at 0% 0%, rgba(255, 45, 120, 0.20), transparent 62%),
+        radial-gradient(900px 560px at 100% 100%, rgba(0, 212, 255, 0.17), transparent 62%),
+        radial-gradient(800px 500px at 55% 45%, rgba(208, 77, 255, 0.13), transparent 65%);
+}
+
+/* ---------- 19. Top toolbar: tinted + 2px glowing gradient line ---------- */
+._3Z7VQ1IMk4E3HsHvrkLNgo {
+    background:
+        linear-gradient(90deg, rgba(255, 45, 120, 0.12), rgba(208, 77, 255, 0.08) 50%, rgba(0, 212, 255, 0.12)),
+        linear-gradient(180deg, #1a0d30 0%, #120922 100%) !important;
+    border-bottom: 2px solid transparent !important;
+    border-image: var(--neon-line) 1 !important;
+    box-shadow: 0 2px 10px rgba(255, 45, 120, 0.35), 0 4px 26px rgba(0, 212, 255, 0.22) !important;
+}
+._7AlhCx3XGzBeIrQaCneUD._1gqEjB5QsKT_NftD1dEsdZ {
+    box-shadow: var(--keycap-pressed), 0 0 8px rgba(255, 45, 120, 0.55), 0 0 24px rgba(255, 45, 120, 0.30) !important;
+}
+._7AlhCx3XGzBeIrQaCneUD._1gqEjB5QsKT_NftD1dEsdZ:not(._2cO0HdvLEGAdhosLekWsmo) ._19axKcqYRuaJ8vdYKYmtTQ {
+    text-shadow: 0 0 6px rgba(255, 45, 120, 0.9), 0 0 16px rgba(255, 45, 120, 0.6), 0 0 28px rgba(208, 77, 255, 0.4) !important;
+}
+
+/* ---------- 20. Library backgrounds: lit city glow ---------- */
+._2gSXCB6PbOlMxslr8hm6dm,
+._2Dd4T78PcCTUVgOtDGFY5j {
+    background:
+        var(--city-glow),
+        linear-gradient(rgba(0, 212, 255, 0.035) 1px, transparent 1px) 0 0 / 32px 32px,
+        linear-gradient(90deg, rgba(208, 77, 255, 0.035) 1px, transparent 1px) 0 0 / 32px 32px,
+        #0f0820 !important;
+}
+._3x1HklzyDs4TEjACrRO2tB,
+._1ENHEsrSLcTRtPQFl1F-wL._1DvwQt0JN-Ogp_4tVZdkzX {
+    background:
+        var(--scanlines),
+        radial-gradient(600px 400px at 0% 0%, rgba(255, 45, 120, 0.16), transparent 65%),
+        radial-gradient(500px 500px at 100% 100%, rgba(0, 212, 255, 0.10), transparent 65%),
+        #140a28 !important;
+    border-right: 2px solid transparent !important;
+    border-image: linear-gradient(180deg, #ff2d78, #d04dff 50%, #00d4ff) 1 !important;
+    box-shadow: 2px 0 14px rgba(208, 77, 255, 0.35) !important;
+}
+
+/* Collection headers: real 3px glowing cyan bar */
+._2sYIghGVXJr6tsQVvcryy8 {
+    box-shadow: inset 3px 0 0 #00d4ff, -2px 0 10px rgba(0, 212, 255, 0.65) !important;
+    border-left: 0 !important;
+}
+._2sYIghGVXJr6tsQVvcryy8 ._3cV3O8FnPQqpJO5kIMUlLX,
+._2sYIghGVXJr6tsQVvcryy8 ._2mZ8LlvoUiyeEUtIWuTri {
+    padding-left: 4px;
+    text-shadow: 0 0 6px rgba(208, 77, 255, 0.8), 0 0 16px rgba(208, 77, 255, 0.4);
+}
+
+/* Terminal titles: glow + blinking prompt */
+._2o5c89vAnrXN8C60QTSMqO,
+._2q70uOe6xM3-c5XIVfBLe6 {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.35), 0 0 18px rgba(208, 77, 255, 0.55);
+}
+._2o5c89vAnrXN8C60QTSMqO::before,
+._2q70uOe6xM3-c5XIVfBLe6::before {
+    text-shadow: 0 0 6px rgba(0, 212, 255, 0.9), 0 0 18px rgba(0, 212, 255, 0.6) !important;
+    animation: s1b-blink 1.1s infinite;
+}
+
+/* Panels & cards: double glow */
+._3pSPluBgf0NeR1kkCLWMhR,
+._1ZS_xta5HMXzR8JgxDH6n7 ._2PF_m-I5yte3WnQhpcz8RC {
+    box-shadow: var(--keycap-depth), 0 0 8px rgba(255, 45, 120, 0.35), 0 0 22px rgba(255, 45, 120, 0.18) !important;
+}
+.B-vCdL38RiJlhfSRgZv78 .SPz0ipLqfF1oAO7tdrkdY {
+    border-color: rgba(208, 77, 255, 0.5) !important;
+    box-shadow: 0 0 8px rgba(208, 77, 255, 0.30), 0 0 22px rgba(208, 77, 255, 0.15) !important;
+}
+.WYgDg9NyCcMIVuMyZ_NBC {
+    box-shadow: 0 0 0 1px rgba(208, 77, 255, 0.35), 0 0 10px rgba(208, 77, 255, 0.18) !important;
+}
+.WYgDg9NyCcMIVuMyZ_NBC:hover,
+.gpfocus .WYgDg9NyCcMIVuMyZ_NBC,
+._54PuCatl_tYG836TOs4Mv .WYgDg9NyCcMIVuMyZ_NBC._2YsY_x7hLyKlUqjX9bhn0R {
+    box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.95), 0 0 0 4px rgba(255, 45, 120, 0.55), 0 0 18px rgba(0, 212, 255, 0.60), 0 0 40px rgba(255, 45, 120, 0.35) !important;
+}
+
+/* Bottom pill: stronger glow */
+._3vCzSrrXZzZjVJFZNg9SGu {
+    background: linear-gradient(90deg, rgba(255, 45, 120, 0.10), rgba(28, 14, 52, 0.85) 30%, rgba(28, 14, 52, 0.85) 70%, rgba(0, 212, 255, 0.10)) !important;
+    border-color: rgba(208, 77, 255, 0.65) !important;
+    box-shadow: 0 0 8px rgba(208, 77, 255, 0.45), 0 0 24px rgba(255, 45, 120, 0.25), 0 6px 20px rgba(0, 0, 0, 0.45) !important;
+}
+
+/* Context menus: more glow */
+._3pofGqV0buiKAfMPEs3_82 {
+    background: var(--scanlines), rgba(28, 14, 52, 0.86) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55), 0 0 8px rgba(208, 77, 255, 0.45), 0 0 24px rgba(255, 45, 120, 0.22) !important;
+}
+
+/* ---------- 21. Friends window ---------- */
+.friendlistListContainer,
+.ChatRoomList,
+.chatRoomListContainer {
+    background:
+        var(--scanlines),
+        radial-gradient(500px 380px at 0% 0%, rgba(255, 45, 120, 0.14), transparent 65%),
+        radial-gradient(500px 420px at 100% 100%, rgba(0, 212, 255, 0.10), transparent 65%),
+        #120926 !important;
+}
+.friendListHeaderContainer {
+    background:
+        linear-gradient(90deg, rgba(255, 45, 120, 0.12), rgba(208, 77, 255, 0.08) 50%, rgba(0, 212, 255, 0.10)),
+        #160b2e !important;
+    box-shadow: inset 0 -1px 0 rgba(208, 77, 255, 0.45), 0 2px 14px rgba(208, 77, 255, 0.25) !important;
+}
+/* FRIENDS / GROUP CHATS headers = library collection style */
+.friendsListSectionTitle {
+    background: linear-gradient(90deg, rgba(0, 212, 255, 0.55), rgba(208, 77, 255, 0.25) 45%, transparent 85%) left bottom / 100% 1px no-repeat, linear-gradient(90deg, rgba(0, 212, 255, 0.07), transparent 60%) !important;
+    border: none !important;
+    box-shadow: inset 3px 0 0 #00d4ff, -2px 0 10px rgba(0, 212, 255, 0.6) !important;
+    color: #e3a8ff !important;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    text-shadow: 0 0 6px rgba(208, 77, 255, 0.8), 0 0 16px rgba(208, 77, 255, 0.4);
+}
+.friendGroup .groupName {
+    color: #e3a8ff !important;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    text-shadow: 0 0 8px rgba(208, 77, 255, 0.5);
+}
+.friendGroup .groupName .groupCount { color: rgba(0, 212, 255, 0.75) !important; }
+/* In-game: neon green name, dim cyan game line */
+.friend.ingame,
+.ingame .nOdcT-MoOaXGePXLyPe0H {
+    color: #00ff41 !important;
+    text-shadow: 0 0 6px rgba(0, 255, 65, 0.55), 0 0 14px rgba(0, 255, 65, 0.25);
+}
+.friend.ingame .status,
+.ingame ._2Ri005Wg_uXDTa71kdRbcN,
+.ingame ._2Ri005Wg_uXDTa71kdRbcN a,
+.ingame ._1cB0qtF0paHWWyj1XNcnbG._2Ri005Wg_uXDTa71kdRbcN,
+.ingame ._1cB0qtF0paHWWyj1XNcnbG._2Ri005Wg_uXDTa71kdRbcN a {
+    color: rgba(0, 212, 255, 0.72) !important;
+    text-shadow: none;
+}
+/* Online: cyan · Offline: dimmed */
+.friend.online .nOdcT-MoOaXGePXLyPe0H,
+.friend.online { color: #00d4ff !important; text-shadow: 0 0 6px rgba(0, 212, 255, 0.45); }
+.friend.offline { opacity: 0.55; filter: saturate(0.6); }
+/* Row hover */
+.friendStatusHover:hover,
+.friendStatusHover.Friend_ContextMenuActive,
+.friendStatusHover.ingame:hover,
+.friendStatusHover.ingame.Friend_ContextMenuActive {
+    background: linear-gradient(90deg, rgba(0, 212, 255, 0.16), rgba(208, 77, 255, 0.06) 60%, transparent) !important;
+    box-shadow: inset 2px 0 0 #00d4ff;
+}
+/* Avatars: rounded-square neon ring */
+.friend .avatarHolder img.avatar {
+    border-radius: 7px !important;
+    border: 0 !important;
+}
+.friend.online .avatarHolder img.avatar {
+    box-shadow: 0 0 0 1.5px #00d4ff, 0 0 10px rgba(0, 212, 255, 0.55) !important;
+}
+.friend.ingame .avatarHolder img.avatar {
+    box-shadow: 0 0 0 1.5px #ff2d78, 0 0 10px rgba(255, 45, 120, 0.6) !important;
+}
+/* Quick access drop zone + GOT IT keycap */
+.quickAccessFriendsMessage {
+    border: 1px dashed rgba(255, 45, 120, 0.75) !important;
+    color: rgba(255, 150, 190, 0.9) !important;
+    background: rgba(255, 45, 120, 0.05) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 0 10px rgba(255, 45, 120, 0.18);
+}
+.quickAccessFriendsMessageDismiss {
+    background: rgba(28, 14, 52, 0.85) !important;
+    color: #ff2d78 !important;
+    border: 1px solid rgba(255, 45, 120, 0.75) !important;
+    border-radius: 7px !important;
+    padding: 2px 8px !important;
+    box-shadow: var(--keycap-depth), 0 0 8px rgba(255, 45, 120, 0.45) !important;
+    text-shadow: 0 0 6px rgba(255, 45, 120, 0.6);
+    cursor: pointer;
+}
+.quickAccessFriendsMessageDismiss:hover { background: rgba(255, 45, 120, 0.15) !important; }
+.quickAccessFriendsMessageDismiss:active { transform: translateY(1px); box-shadow: var(--keycap-pressed), 0 0 8px rgba(255, 45, 120, 0.45) !important; }
+
+/* ---------- 22. Store ---------- */
+body .home_title,
+body .home_section_title,
+body .home_page_content h2 {
+    text-transform: uppercase !important;
+    letter-spacing: 0.12em !important;
+    color: #f3ecff !important;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.3), 0 0 18px rgba(208, 77, 255, 0.55);
+}
+body .home_title::before,
+body .home_section_title::before {
+    content: "> ";
+    color: #00d4ff;
+    text-shadow: 0 0 6px rgba(0, 212, 255, 0.9), 0 0 18px rgba(0, 212, 255, 0.6);
+    animation: s1b-blink 1.1s infinite;
+}
+/* Single frame on the main carousel */
+body .carousel_container.maincap {
+    box-shadow: 0 0 0 1px rgba(208, 77, 255, 0.65), 0 0 10px rgba(255, 45, 120, 0.35), 0 0 28px rgba(0, 212, 255, 0.20) !important;
+}
+/* Carousel dots */
+body .carousel_thumbs > div { border-radius: 3px; }
+body .carousel_thumbs > div.focus {
+    background-color: #ff2d78 !important;
+    box-shadow: 0 0 6px rgba(255, 45, 120, 0.9), 0 0 16px rgba(255, 45, 120, 0.5);
+}
+/* Discount chips: neon green keycaps */
+body .discount_block .discount_pct,
+body .discount_pct {
+    background: linear-gradient(180deg, #3dff6e, #00e03a) !important;
+    color: #00210a !important;
+    font-weight: 700;
+    border-radius: 6px;
+    box-shadow: inset 0 -2px 0 rgba(0, 60, 18, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 0 10px rgba(0, 255, 65, 0.45);
+}
+
+/* =====================================================================
+   S1B NEON · PASS 4 — store calendar, specials, friends headers,
+   game page, downloads, settings, chat, tooltips, toasts
+   ===================================================================== */
+
+/* ---------- 23. Store · Personal Calendar day cards ---------- */
+.maxz19gKOQc- {
+    background:
+        var(--scanlines),
+        linear-gradient(180deg, rgba(0, 212, 255, 0.08), rgba(18, 9, 38, 0.92) 55%) !important;
+    border: 1px solid rgba(0, 212, 255, 0.30) !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 0 10px rgba(0, 212, 255, 0.12) !important;
+    transition: box-shadow 160ms ease, transform 160ms ease;
+}
+.maxz19gKOQc-:not(._8XPG-IbvHHs-):not(.N3v3VnhKgU8-) { opacity: 0.82; }
+.maxz19gKOQc-:not(._8XPG-IbvHHs-):not(.N3v3VnhKgU8-) .lGsGMjZ-9IE- { color: rgba(0, 212, 255, 0.75) !important; }
+/* Future days: purple */
+.maxz19gKOQc-.N3v3VnhKgU8- {
+    background:
+        var(--scanlines),
+        linear-gradient(180deg, rgba(208, 77, 255, 0.16), rgba(18, 9, 38, 0.92) 55%) !important;
+    border-color: rgba(208, 77, 255, 0.50) !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), var(--glow-purple) !important;
+}
+.maxz19gKOQc-.N3v3VnhKgU8- .lGsGMjZ-9IE- { color: #e3a8ff !important; text-shadow: 0 0 8px rgba(208, 77, 255, 0.6); }
+/* TODAY: pink glow + keycap label */
+.maxz19gKOQc-._8XPG-IbvHHs- {
+    background:
+        var(--scanlines),
+        linear-gradient(180deg, rgba(255, 45, 120, 0.22), rgba(18, 9, 38, 0.92) 60%) !important;
+    border: 1px solid #ff2d78 !important;
+    box-shadow: 0 0 0 1px rgba(255, 45, 120, 0.35), var(--glow-pink) !important;
+}
+.maxz19gKOQc-._8XPG-IbvHHs- .lGsGMjZ-9IE- {
+    display: inline-block;
+    padding: 2px 10px !important;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #ff4f8f, #d81b60) !important;
+    color: #fff !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    box-shadow: 0 3px 0 #7a0f37, 0 0 12px rgba(255, 45, 120, 0.65);
+}
+.maxz19gKOQc-:hover { transform: translateY(-2px); }
+.maxz19gKOQc- .N83ri6QShHM- { background: transparent !important; }
+
+/* Calendar title + NEW chip */
+.IdjQXo6E9yc- {
+    color: #e3a8ff !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-shadow: 0 0 6px rgba(208, 77, 255, 0.7), 0 0 18px rgba(208, 77, 255, 0.3);
+}
+.x8jWPgfdVoI- {
+    background: linear-gradient(180deg, #ff4f8f, #d81b60) !important;
+    color: #fff !important;
+    border-radius: 5px !important;
+    padding: 1px 7px !important;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-shadow: none !important;
+    box-shadow: 0 2px 0 #7a0f37, 0 0 10px rgba(255, 45, 120, 0.6);
+}
+
+/* ---------- 24. Store · specials / deals ---------- */
+.carousel__slider.carousel__slider--horizontal:has(.nw-DtQ670Sc-, .jxYpM-g5fRs-):not(:has(.maxz19gKOQc-)) {
+    background:
+        var(--scanlines),
+        radial-gradient(600px 300px at 0% 0%, rgba(208, 77, 255, 0.18), transparent 70%),
+        rgba(20, 10, 42, 0.78) !important;
+    border: 1px solid rgba(208, 77, 255, 0.55) !important;
+    box-shadow: 0 0 0 1px rgba(208, 77, 255, 0.15), var(--glow-purple) !important;
+}
+.jxYpM-g5fRs- {
+    background: linear-gradient(90deg, rgba(255, 45, 120, 0.9), rgba(208, 77, 255, 0.9)) !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    box-shadow: 0 0 12px rgba(255, 45, 120, 0.5) !important;
+}
+.nw-DtQ670Sc- {
+    background: rgba(0, 255, 65, 0.12) !important;
+    color: #00ff41 !important;
+    border: 1px solid #00ff41 !important;
+    border-radius: 6px !important;
+    font-weight: 700;
+    text-shadow: 0 0 6px rgba(0, 255, 65, 0.7);
+    box-shadow: 0 2px 0 rgba(0, 120, 30, 0.9), 0 0 10px rgba(0, 255, 65, 0.35) !important;
+}
+.txCSzBxQT1Q- {
+    color: #e3a8ff !important;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    text-shadow: 0 0 6px rgba(208, 77, 255, 0.8), 0 0 16px rgba(208, 77, 255, 0.4);
+}
+.txCSzBxQT1Q-::before {
+    content: "> ";
+    color: #00d4ff;
+    text-shadow: 0 0 8px rgba(0, 212, 255, 0.8);
+}
+.carousel__dot { background: rgba(208, 77, 255, 0.35) !important; border-radius: 3px; }
+.carousel__dot--selected {
+    background: #ff2d78 !important;
+    box-shadow: 0 0 8px rgba(255, 45, 120, 0.8), 0 0 18px rgba(255, 45, 120, 0.4) !important;
+}
+
+/* ---------- 25. Friends · FRIENDS / GROUP CHATS headers (opaque violet glass) ---------- */
+.socialListTab.friendTab,
+.friendsListSectionTitle,
+.friendsListSectionTitle.chatSectionTitle {
+    background:
+        linear-gradient(90deg, rgba(0, 212, 255, 0.70), rgba(208, 77, 255, 0.35) 45%, transparent 85%) left bottom / 100% 1px no-repeat,
+        linear-gradient(90deg, rgba(0, 212, 255, 0.12), rgba(208, 77, 255, 0.10) 50%, transparent),
+        #1a0d36 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+}
+.socialListTab.friendTab .tabLabel {
+    color: #e3a8ff !important;
+    letter-spacing: 0.12em;
+    text-shadow: 0 0 6px rgba(208, 77, 255, 0.8), 0 0 16px rgba(208, 77, 255, 0.4);
+}
+.friendsListSectionTitle.chatSectionTitle:hover {
+    background:
+        linear-gradient(90deg, rgba(0, 212, 255, 0.85), rgba(255, 45, 120, 0.45) 45%, transparent 85%) left bottom / 100% 1px no-repeat,
+        linear-gradient(90deg, rgba(0, 212, 255, 0.20), rgba(208, 77, 255, 0.14) 50%, transparent),
+        #1f1040 !important;
+}
+.friendsListSectionTitle .SVGIcon_NewChatGroup,
+.ToggleGroupChatList .SVGIcon_DoubleArrow polyline { color: #00d4ff !important; fill: #00d4ff !important; stroke: #00d4ff !important; }
+/* Group chat rows: normal case, cyan hover */
+.ChatRoomListGroupItem:hover { background: linear-gradient(90deg, rgba(0, 212, 255, 0.14), transparent) !important; }
+.ChatRoomListGroupItem .chatRoomName { color: #f2e9ff !important; }
+/* Section dividers between groups */
+.FriendsListContent .friendlistListContainer .friendGroup { border-color: rgba(208, 77, 255, 0.22) !important; }
+
+/* ---------- 26. Library · game details page ---------- */
+._3scbHORkYB7utTUGfkMCC_ {
+    background: linear-gradient(180deg, rgba(26, 13, 54, 0.80), rgba(18, 9, 38, 0.92)) !important;
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(90deg, #ff2d78, #d04dff 50%, #00d4ff) 1;
+    box-shadow: 0 -6px 24px rgba(208, 77, 255, 0.18);
+}
+._1xrOZmz8owkTdWRU_2DoXl,
+._1UEO4DxAwxOkoh8USUci9W {
+    background: var(--glass-bg) !important;
+    border: 1px solid var(--glass-edge) !important;
+    border-radius: 12px;
+    box-shadow: var(--glow-purple) !important;
+}
+._1EjjeGgUBbobayGTmtKTUv { color: #e3a8ff !important; text-transform: uppercase; letter-spacing: 0.10em; text-shadow: 0 0 6px rgba(208, 77, 255, 0.7); }
+/* Achievement icons: rounded neon ring */
+.M5YgSyrfvCXXY_XYhYzcl { border-radius: 8px !important; box-shadow: 0 0 0 1px rgba(0, 212, 255, 0.55), 0 0 8px rgba(0, 212, 255, 0.35); }
+._1R1QQtfmrxNkfIGlKSdDqG .M5YgSyrfvCXXY_XYhYzcl { box-shadow: 0 0 0 1px #ffb59f, 0 0 12px rgba(255, 181, 159, 0.6); }
+
+/* ---------- 27. Downloads ---------- */
+.qq2xItSXjpCsNrcxyPJtO {
+    color: #e3a8ff !important;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    text-shadow: 0 0 6px rgba(208, 77, 255, 0.8), 0 0 16px rgba(208, 77, 255, 0.4);
+}
+._1CTr1yKRkOXnJ4gSS1-1A3 { background: linear-gradient(90deg, #00d4ff, rgba(208, 77, 255, 0.4) 50%, transparent) !important; height: 1px; }
+._1CGnw50aAma6AYKF51Qzsm { color: #00d4ff !important; }
+._3raSL6OYLHmLlbF96kGtnr { background: linear-gradient(180deg, #ff2d78, #d04dff) !important; }
+._3GBFL10vEfhI28U95WaqMj { border-radius: 12px; box-shadow: inset 0 0 0 1px rgba(208, 77, 255, 0.35); }
+.eXF8xL2LUtzeWMbK-FSRz { color: #00d4ff !important; text-shadow: 0 0 8px rgba(0, 212, 255, 0.5); }
+
+/* ---------- 28. Settings dialogs ---------- */
+._2sssIwe0duyIrFvat2oXzH ._2kwFFHckg8jvnwJfg9-la8,
+._33vqr13-jdnjTkKKTh414f ._1d6VIquCc410kNE7rDAje6 {
+    background: var(--scanlines), linear-gradient(180deg, #170b31, #10071f) !important;
+    box-shadow: inset -1px 0 0 rgba(208, 77, 255, 0.40);
+}
+._2rjVTGz8aLvqOdz5v2gq5C,
+._3aOHbtFJ8uSR7XH0WFQ8vv {
+    color: #e3a8ff !important;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    text-shadow: 0 0 6px rgba(208, 77, 255, 0.8), 0 0 16px rgba(208, 77, 255, 0.4);
+}
+._1-vlriAtKYDViAEunue4VO:hover,
+._2mL2HfT5AkDXRi1YBnRWKa:hover {
+    background: linear-gradient(90deg, rgba(0, 212, 255, 0.16), transparent) !important;
+    box-shadow: inset 2px 0 0 #00d4ff;
+}
+._1-vlriAtKYDViAEunue4VO._2DpXjzK3WWsOtUWUrcuOG7,
+._2mL2HfT5AkDXRi1YBnRWKa._1ELdDY5kb5jxjXe-FpWBo5 {
+    background: linear-gradient(90deg, rgba(255, 45, 120, 0.30), rgba(208, 77, 255, 0.12) 70%, transparent) !important;
+    color: #fff !important;
+    box-shadow: inset 3px 0 0 #ff2d78, 0 0 12px rgba(255, 45, 120, 0.25) !important;
+}
+._1-vlriAtKYDViAEunue4VO._2DpXjzK3WWsOtUWUrcuOG7 *,
+._2mL2HfT5AkDXRi1YBnRWKa._1ELdDY5kb5jxjXe-FpWBo5 * { color: #fff !important; fill: #fff !important; }
+
+/* ---------- 29. Chat windows ---------- */
+._2XZq-_f6npaQdAgeRzKIkz.Yd-DsWkYiFiYwpci--Yk_ {
+    box-shadow: inset 0 -2px 0 #ff2d78, 0 0 12px rgba(255, 45, 120, 0.35) !important;
+}
+._2ve8VIOIUS5rjAzmJvjVS- { box-shadow: inset 0 -2px 0 #00d4ff, 0 0 12px rgba(0, 212, 255, 0.45) !important; }
+._3Ule3rolhZJiBN4yNNtk1s {
+    background: rgba(20, 10, 42, 0.85) !important;
+    border: 1px solid rgba(208, 77, 255, 0.40) !important;
+    border-radius: 10px;
+}
+._3Ule3rolhZJiBN4yNNtk1s:focus-within {
+    border-color: #00d4ff !important;
+    box-shadow: 0 0 0 1px rgba(0, 212, 255, 0.45), var(--glow-cyan) !important;
+}
+.RVIs84dAE6wHcjH9tkinc {
+    background: linear-gradient(180deg, #ff4f8f, #d81b60) !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 3px 0 #7a0f37, 0 0 10px rgba(255, 45, 120, 0.5) !important;
+}
+
+/* ---------- 30. Tooltips ---------- */
+._2FxbHJzYoH024ko7zqcJOf,
+._3XGRklQrZMakU2xaYB0cLD,
+._3gaFkyJJveAf0h3zzI-l0C {
+    background: rgba(20, 10, 42, 0.96) !important;
+    border: 1px solid rgba(0, 212, 255, 0.55) !important;
+    border-radius: 8px !important;
+    color: #f2e9ff !important;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.55), 0 0 12px rgba(0, 212, 255, 0.30) !important;
+}
+._1LhVfNukndDa_XWzq0vdg1 { color: #00d4ff !important; text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* ---------- 31. Toasts / notifications ---------- */
+._3-H47wPl1Ng3lh7xGZOPIg,
+._2h6KD6p6y4vIgO2Toxx-_K {
+    background: var(--scanlines), linear-gradient(135deg, rgba(36, 14, 64, 0.97), rgba(18, 9, 38, 0.97)) !important;
+    border: 1px solid rgba(255, 45, 120, 0.60) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6), var(--glow-pink) !important;
+}
+._18PwvOcpWfW3M8j2-bEPPJ,
+._2MGSmn9lIFnmLVIX49POSx { color: #00d4ff !important; text-shadow: 0 0 6px rgba(0, 212, 255, 0.5); }
