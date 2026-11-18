@@ -200,8 +200,9 @@ button.DialogButton._DialogLayout.Primary:enabled {
 
 /* ---------- 8. Super nav tabs as glowing keycaps ---------- */
 ._7AlhCx3XGzBeIrQaCneUD {
-    padding: 2px 10px !important;
+    padding: 2px 12px !important;
     margin-inline: 3px !important;
+    transform: translateY(-5px);
     border-radius: 9px !important;
     border: 1px solid rgba(255, 255, 255, 0.07) !important;
     background-color: rgba(255, 255, 255, 0.025) !important;
@@ -213,7 +214,7 @@ button.DialogButton._DialogLayout.Primary:enabled {
     box-shadow: var(--keycap-depth), var(--glow-cyan) !important;
 }
 ._7AlhCx3XGzBeIrQaCneUD._1gqEjB5QsKT_NftD1dEsdZ {
-    transform: translateY(1px);
+    transform: translateY(-4px);
     border-color: rgba(255, 45, 120, 0.75) !important;
     background: var(--neon-line) left bottom / 100% 2px no-repeat, rgba(255, 45, 120, 0.13) !important;
     box-shadow: var(--keycap-pressed), 0 0 12px rgba(255, 45, 120, 0.40) !important;
@@ -932,3 +933,128 @@ body .discount_pct {
 }
 ._18PwvOcpWfW3M8j2-bEPPJ,
 ._2MGSmn9lIFnmLVIX49POSx { color: #00d4ff !important; text-shadow: 0 0 6px rgba(0, 212, 255, 0.5); }
+
+/* ---------- 22. Dropdown / context menus: terminal keycap items ---------- */
+._3pofGqV0buiKAfMPEs3_82,
+._20v4MHXd0kP4rRu6ZTAGQU,
+._14wqdluDeDnnEcg3OSLEmd {
+    padding: 6px !important;
+    border: 1px solid rgba(208, 77, 255, 0.55) !important;
+    border-radius: 12px !important;
+    background:
+        var(--neon-line) left top / 100% 2px no-repeat,
+        var(--scanlines),
+        rgba(22, 11, 42, 0.92) !important;
+    backdrop-filter: blur(16px) saturate(140%);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 10px rgba(208, 77, 255, 0.40), 0 0 26px rgba(255, 45, 120, 0.18) !important;
+}
+._3pofGqV0buiKAfMPEs3_82 ._2jXHP0742MyApMUVUM8IFn,
+._1n7Wloe5jZ6fSuvV18NNWI,
+._1LsipsEx7hFhSXXYv8JyXX,
+._322wB1UQPdladoadh6Ac_b,
+._34o03-8cUc3fQX1u650c0L {
+    margin: 1px 0 !important;
+    padding: 4px 12px 4px 14px !important;
+    min-height: 0 !important;
+    line-height: 1.35 !important;
+    border-radius: 8px !important;
+    border: 1px solid transparent !important;
+    letter-spacing: 0.05em;
+    color: #d9c9ff !important;
+    transition: background .12s ease, border-color .12s ease, color .12s ease, text-shadow .12s ease, padding .12s ease !important;
+}
+._3pofGqV0buiKAfMPEs3_82 ._2jXHP0742MyApMUVUM8IFn:not(.d8GPmAyQdRQwoHiPbc8Js):hover,
+._1n7Wloe5jZ6fSuvV18NNWI:hover,
+._1LsipsEx7hFhSXXYv8JyXX:hover,
+._322wB1UQPdladoadh6Ac_b:hover,
+._34o03-8cUc3fQX1u650c0L:hover {
+    padding-left: 18px !important;
+    border-color: rgba(255, 45, 120, 0.55) !important;
+    background: linear-gradient(90deg, rgba(255, 45, 120, 0.24) 0%, rgba(208, 77, 255, 0.12) 60%, rgba(0, 212, 255, 0.06) 100%) !important;
+    box-shadow: inset 3px 0 0 var(--neon-cyan), 0 0 10px rgba(255, 45, 120, 0.25) !important;
+    color: #fff !important;
+    text-shadow: 0 0 6px rgba(255, 45, 120, 0.7);
+}
+.ixiWPQKqTMxnq43WgT3vj,
+.WUOrULWKkGLl3ZUQdDXg8,
+.IjIBR_wDDi2N77Oz4KAT4 {
+    height: 1px !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 4px 8px !important;
+    border: none !important;
+    background: linear-gradient(90deg, transparent, rgba(255, 45, 120, 0.7), rgba(208, 77, 255, 0.6), rgba(0, 212, 255, 0.7), transparent) !important;
+    opacity: 0.8;
+}
+/* Separators never act like items */
+.ixiWPQKqTMxnq43WgT3vj.ixiWPQKqTMxnq43WgT3vj, .ixiWPQKqTMxnq43WgT3vj.ixiWPQKqTMxnq43WgT3vj:hover,
+.WUOrULWKkGLl3ZUQdDXg8.WUOrULWKkGLl3ZUQdDXg8, .WUOrULWKkGLl3ZUQdDXg8.WUOrULWKkGLl3ZUQdDXg8:hover,
+.IjIBR_wDDi2N77Oz4KAT4.IjIBR_wDDi2N77Oz4KAT4, .IjIBR_wDDi2N77Oz4KAT4.IjIBR_wDDi2N77Oz4KAT4:hover {
+    height: 1px !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 4px 8px !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent, rgba(255, 45, 120, 0.7), rgba(208, 77, 255, 0.6), rgba(0, 212, 255, 0.7), transparent) !important;
+}
+
+/* ---------- 23. Toolbar brand: S1B in neon instead of "Material" ---------- */
+body ._1Ky59qmywxOUtNcI1cgmkX ._2Lu3d-5qLmW4i19ysTt2jT:nth-of-type(1):not(svg)::after {
+    content: "S1B" !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.14em !important;
+    background: linear-gradient(90deg, #ff2d78, #d04dff 50%, #00d4ff) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    filter: drop-shadow(0 0 4px rgba(255, 45, 120, 0.65)) drop-shadow(0 0 8px rgba(0, 212, 255, 0.35));
+}
+
+/* ---------- 24. Compact super nav: smaller keycaps, more air above ---------- */
+._7AlhCx3XGzBeIrQaCneUD {
+    padding: 0 10px !important;
+    transform: translateY(-3px);
+}
+._7AlhCx3XGzBeIrQaCneUD._1gqEjB5QsKT_NftD1dEsdZ {
+    transform: translateY(-3px);
+}
+._7AlhCx3XGzBeIrQaCneUD ._19axKcqYRuaJ8vdYKYmtTQ {
+    font-size: 86% !important;
+}
+
+/* ---------- 25. Item wrappers that only hold a separator: flat, mouse-inert ---------- */
+:is(._2jXHP0742MyApMUVUM8IFn, ._1n7Wloe5jZ6fSuvV18NNWI, ._1LsipsEx7hFhSXXYv8JyXX, ._322wB1UQPdladoadh6Ac_b, ._34o03-8cUc3fQX1u650c0L):has(.ixiWPQKqTMxnq43WgT3vj, .WUOrULWKkGLl3ZUQdDXg8, .IjIBR_wDDi2N77Oz4KAT4, hr),
+:is(._2jXHP0742MyApMUVUM8IFn, ._1n7Wloe5jZ6fSuvV18NNWI, ._1LsipsEx7hFhSXXYv8JyXX, ._322wB1UQPdladoadh6Ac_b, ._34o03-8cUc3fQX1u650c0L):has(.ixiWPQKqTMxnq43WgT3vj, .WUOrULWKkGLl3ZUQdDXg8, .IjIBR_wDDi2N77Oz4KAT4, hr):hover {
+    padding: 0 !important;
+    margin: 3px 0 !important;
+    min-height: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+/* ---------- 26. Top-bar dropdown separator (MenuItem.Separator): flat line, mouse-inert ---------- */
+._3pofGqV0buiKAfMPEs3_82 ._2jXHP0742MyApMUVUM8IFn._21GPYlKBCLsHQpTsHw_RL_,
+._3pofGqV0buiKAfMPEs3_82 ._2jXHP0742MyApMUVUM8IFn._21GPYlKBCLsHQpTsHw_RL_:not(.d8GPmAyQdRQwoHiPbc8Js):hover {
+    height: 1px !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 4px 8px !important;
+    width: auto !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: linear-gradient(90deg, transparent, rgba(255, 45, 120, 0.7), rgba(208, 77, 255, 0.6), rgba(0, 212, 255, 0.7), transparent) !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    opacity: 0.8;
+    pointer-events: none !important;
+    cursor: default !important;
+}

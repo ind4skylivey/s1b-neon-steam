@@ -24,11 +24,8 @@ A lit city at night that is still easy to read.
     <td colspan="2"><img src="screenshots/library.png" alt="Library"><br><sub><b>Library</b></sub></td>
   </tr>
   <tr>
+    <td width="50%"><img src="screenshots/library-menu.png" alt="Library menu with keycap items"><br><sub><b>Keycap menus</b></sub></td>
     <td width="50%"><img src="screenshots/friends.png" alt="Friends and chat"><br><sub><b>Friends and chat</b></sub></td>
-    <td width="50%"><img src="screenshots/menu.png" alt="Menu"><br><sub><b>Menu</b></sub></td>
-  </tr>
-  <tr>
-    <td colspan="2"><img src="screenshots/settings.png" alt="Settings"><br><sub><b>Settings</b></sub></td>
   </tr>
 </table>
 
@@ -52,6 +49,7 @@ A lit city at night that is still easy to read.
 - **Glass panels** on a deep violet base (`#0f0820` to `#1a0d36`), with soft radial glows and subtle scanlines
 - **Keycap buttons and chips** with depth and press states. PLAY is a neon green keycap
 - **Terminal headers**: uppercase, neon text-shadow and a blinking `>` prompt
+- **Keycap menus**: dropdown and context menu items styled like terminal keycaps, with flat separators, and a compact top navigation
 - **Library**: neon gradient line on the top bar, sidebar edge, collection headers with a glowing cyan bar, capsule hover lift with a cyan and pink ring
 - **Store**: framed main carousel, Personal Calendar cards (past in dim cyan, TODAY in pink glow with a keycap label, future in purple), glass specials panel, pink NEW chip, neon green discount keycaps, glowing carousel dots
 - **Friends and chat**: violet glass list, FRIENDS / GROUP CHATS headers, in-game friends in `#00ff41`, online in cyan, offline dimmed, avatar rings, keycap send button
